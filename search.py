@@ -89,8 +89,6 @@ def menu(options_list):
     option = input_checker('Your choice: ', correct_options)
     return option
 
-
-### Program 'loop'
 def run():
     option = menu(['Anime', 'Manga', 'Character'])
     os.system('cls' if os.name == 'nt' else 'clear')
@@ -102,7 +100,7 @@ def run():
 
     print("<Rift's Weeb Search>")
     print()
-    
+
     if option == 0:
         o = Anime(search)
     elif option == 1:

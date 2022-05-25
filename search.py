@@ -80,8 +80,7 @@ def create_list(options):
 # Menu
 def menu(options_list):
     correct_options = []
-    print("<Rift's Weeb Search>")
-    print('')
+    print("<Rift's Weeb Search>\n")
     options = create_list(options_list)
     for i in range(len(options)):
         correct_options.append(i)
@@ -93,13 +92,11 @@ def run():
     option = menu(['Anime', 'Manga', 'Character'])
     os.system('cls' if os.name == 'nt' else 'clear')
 
-    print("<Rift's Weeb Search>")
-    print()
+    print("<Rift's Weeb Search>\n")
     search = input('Name: ')
     os.system('cls' if os.name == 'nt' else 'clear')
 
-    print("<Rift's Weeb Search>")
-    print()
+    print("<Rift's Weeb Search>\n")
 
     if option == 0:
         o = Anime(search)

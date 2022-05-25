@@ -18,7 +18,7 @@ class Anime:
         print('Name (English): ' + str(self.name_english))
         print('Genres: ' + str(self.genres))
         print('Episodes: ' + str(self.episodes))
-        print('Description: ' + str(self.desc))
+        print('Description: ' + str(self.desc).replace('<br>', '\n').replace('<i>', '').replace('</i>', ''))
 
 class Manga:
     def __init__(self, name):
@@ -40,7 +40,7 @@ class Manga:
         print('Status: ' + str(self.release_status))
         print('Volumes: ' + str(self.volumes))
         print('Chapters: ' + str(self.chapters))
-        print('Description: ' + str(self.desc))
+        print('Description: ' + str(self.desc).replace('<br>', '\n').replace('<i>', '').replace('</i>', ''))
 
 class Character:
     def __init__(self, name):
@@ -55,7 +55,7 @@ class Character:
         print('First name: ' + str(self.first_name))
         print('Last name: ' + str(self.last_name))
         print('Native name: ' + str(self.native_name))
-        print('Description: ' + str(self.desc))
+        print('Description: ' + str(self.desc).replace('<br>', '\n').replace('<i>', '').replace('</i>', ''))
         print('Image: ' + str(self.image))
 
 
